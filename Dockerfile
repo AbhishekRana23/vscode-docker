@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update 
 RUN apt-get install git curl aria2 apt-utils software-properties-common sudo aria2 wget megatools unzip bash -y
 
