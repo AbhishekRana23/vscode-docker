@@ -13,4 +13,5 @@ RUN npm install -g typescript
 RUN wget https://github.com/cdr/code-server/releases/download/3.2.0/code-server-3.2.0-linux-x86_64.tar.gz
 RUN tar -xzf code-server-3.2.0-linux-x86_64.tar.gz
 WORKDIR code-server-3.2.0-linux-x86_64
+EXPOSE 8080
 CMD ["bash","code-server"]
