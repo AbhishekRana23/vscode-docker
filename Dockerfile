@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update 
-RUN apt-get git curl aria2 apt-utils software-properties-common sudo aria2 wget megatools unzip bash -y
+RUN apt-get install git curl aria2 apt-utils software-properties-common sudo aria2 wget megatools unzip bash -y
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt install nodejs -y
